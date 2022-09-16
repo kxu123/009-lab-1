@@ -1,0 +1,25 @@
+# Sample of code from an image processing lab (python)
+# Specifics removed because code was written as part of a class
+# Applies a given kernel to an image with one color channel
+
+final_image = {"height": image["height"], "width": image["width"]}
+    finalpixels = []
+for x in range(image['height']):
+        for y in range(image['width']):
+            relevant = []
+            # creating list of pixels to perform kernel on each time
+            # iterating through list of pixels that would be relevant to kernel
+            #for x1 in range function f(x), y1 in range function of f(y):
+                    if 0 <= x1 < image["height"] and 0 <= y1 < image["width"]:
+                        # perform modifications for non-edge pixels
+                    else:
+                        if boundary_behavior == "zero":
+                            # do behavior
+                        if boundary_behavior == "extend":
+                            # do behavior
+                        if boundary_behavior == "wrap":
+                            # do behavior
+                    # mathematical kernel function
+             # apply results of original pixels modified with kernel     
+    final_image["pixels"] = finalpixels
+    return final_image
